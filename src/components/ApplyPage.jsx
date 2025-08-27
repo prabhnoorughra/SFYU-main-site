@@ -42,6 +42,16 @@ function ApplyPage() {
     <>
       <div className="grid grid-cols-1 grid-rows-[auto_auto_1fr] min-h-full 
       justify-center px-6 py-2 lg:px-8 w-full overflow-y-auto">
+        <h1 className='text-center text-white font-extrabold text-2xl mt-5'>
+            Register to be a general member for the 2025-2026 academic year below!
+        </h1>
+        <ul className='mt-10 text-lg text-white mx-auto'>
+            <h2 className='text-xl mb-2'>As a general member, you’ll gain access to:</h2>
+            <li>1. Networking opportunities with undergraduate students, professors, graduate students & STEM professionals</li>
+            <li>2. Exclusive access to events, workshops, and academic panels</li>
+            <li>3. Eligibility to apply and participate in research programs like the 2025-2026 STEM Fellowship at York University Indicium Research Program</li>
+            <li>4. Insight into academic & career pathways in STEM</li>
+        </ul>
         <div className='popupmessages'>
             {errors.length != 0 && (
                 <ul className='text-center mt-5 text-xl
@@ -67,7 +77,7 @@ function ApplyPage() {
         </div>
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
           {!success && (
-            <form onSubmit={handleSignup} className="space-y-6">
+            <form onSubmit={handleSignup} className="space-y-6 mb-10">
                 <div>
                 <label htmlFor="firstName" className="block text-md/6 font-medium text-white">
                     First Name
@@ -207,7 +217,7 @@ function ApplyPage() {
                     text-white hover:bg-indigo-600 focus-visible:outline-2 focus-visible:outline-offset-2 
                     focus-visible:outline-indigo-500 hover:cursor-pointer"
                 >
-                    Submit Application
+                    Submit
                 </button>
                 </div>
             </form>

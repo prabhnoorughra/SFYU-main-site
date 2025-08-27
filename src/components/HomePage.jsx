@@ -7,7 +7,7 @@ function HomePage() {
                           prose-a:text-blue-400 hover:prose-a:text-blue-300
                           prose-headings:font-semibold prose-p:leading-relaxed
                           max-w-3xl">
-                <h1 className="text-center underline">STEM Fellowship at York University</h1>
+                <h1 className="text-center underline text-white">STEM Fellowship at York University</h1>
                 <p>
                     STEM Fellowship at York University is a student-led non-profit organization dedicated to promoting innovation, inclusivity, and excellence in science, technology, engineering, and mathematics (STEM). We are affiliated with the national STEM Fellowship, have 400+ members, and are ratified under SCLD, YFS, and YUSC at York University.
                 </p>

@@ -53,7 +53,7 @@ function NavBar() {
                                     "underline text-white hover:cursor-pointer hover:text-neutral-400"
                                 }
                                 >
-                                Apply
+                                Registration
                             </NavLink>
                         </li>
                         <li className=''>
@@ -117,7 +117,7 @@ function NavBar() {
                                 "underline text-white hover:cursor-pointer hover:text-neutral-400"
                             }
                             >
-                            Apply
+                            Registration
                         </NavLink>
                     </li>
                     <li className=''>

@@ -39,9 +39,9 @@ describe('page tests', () => {
     });
     it("renders correct home page and can view apply page by clicking links", async () => {
         render(renderAt("/"));
-        const applyLinks = screen.getAllByRole('link', { name: /^Apply$/i });
+        const applyLinks = screen.getAllByRole('link', { name: /^Registration$/i });
         await userEvent.click(applyLinks[0]);
-        const submitBtn = screen.getByRole('button', { name: /submit application/i });
+        const submitBtn = screen.getByRole('button', { name: /submit/i });
         expect(submitBtn).toBeInTheDocument();
         expect(screen.getByLabelText(/First Name/i)).toBeInTheDocument();
         expect(screen.getByLabelText(/YorkU Email/i)).toBeInTheDocument();
@@ -73,7 +73,7 @@ describe('Application popup messages', () => {
         );
 
         render(renderAt("/apply"));
-        const submitBtn = screen.getByRole('button', { name: /submit application/i });
+        const submitBtn = screen.getByRole('button', { name: /submit/i });
         expect(submitBtn).toBeInTheDocument();
 
         await userEvent.type(screen.getByLabelText(/First Name/i), "John");
@@ -104,7 +104,7 @@ describe('Application popup messages', () => {
         );
 
         render(renderAt("/apply"));
-        const submitBtn = screen.getByRole('button', { name: /submit application/i });
+        const submitBtn = screen.getByRole('button', { name: /submit/i });
         expect(submitBtn).toBeInTheDocument();
 
         await userEvent.type(screen.getByLabelText(/First Name/i), "John");
