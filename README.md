@@ -1,12 +1,20 @@
-# React + Vite
+# STEM Fellowship @ York University — Public Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Public-facing website for STEM Fellowship @ YorkU. Visitors can learn about the club, browse events, and submit an application that’s sent to the backend API.
 
-Currently, two official plugins are available:
+- Live: https://www.stemfellowshipyorku.ca
+- Tech Stack: Vite + React, Tailwind CSS, DaisyUI, @tailwindcss/typography, React Router, Vitest/Jest
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- 🎯 Application form (first/last name, YorkU email, student ID, program, study year, email consent)
+- 🖼️ Events page with image carousel (DaisyUI) + rich text (Tailwind Typography)
+- 👥 Team page (executive profiles)
+- 🧭 Responsive navbar with active link states
+- 📈 Page view ping to backend for analytics
+- 📱 Fully Responsive
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Future Improvements
+- Allow members/executives to create accounts and log in
+- Allow members to interact with Event Posts
+- Have a schedule showcasing upcoming Events with related information
